@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FF252424"
     tools:context=".MainActivity">
 
     <TextView
@@ -11,22 +12,75 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:textSize="35dp"
+        android:textColor="#FFFFFF"
         android:text="0" />
-    <LinearLayout
+
+    <GridLayout
+        android:id="@+id/gridLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txt"
-        android:layout_marginTop="50dp">
+        android:columnCount="5"
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:rowCount="6"
+        android:layout_marginTop="150dp">
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#706868"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="2dp"
             android:id="@+id/btnsumar"
             android:text="Sumar"/>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#706868"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="2dp"
             android:id="@+id/btnrestar"
             android:text="Restar"/>
-    </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#706868"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="2dp"
+            android:id="@+id/btnlimpiar"
+            android:text="Limpiar"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#706868"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="2dp"
+            android:id="@+id/btnmasdiez"
+            android:text="+10"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#706868"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="2dp"
+            android:id="@+id/btnmenosdiez"
+            android:text="-10"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#706868"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:id="@+id/btnsignos"
+            android:text="-/+"/>
+
+    </GridLayout>
 
 </RelativeLayout>
